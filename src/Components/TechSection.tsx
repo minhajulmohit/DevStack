@@ -15,8 +15,8 @@ function TechSection({ TechDataPromise }: TechProps) {
   //
   //
   return (
-    <section className="container mx-auto grid grid-cols-12 gap-5">
-      <div className="col-span-9 grid grid-cols-3 gap-3 mt-10">
+    <section className="px-2 container mx-auto md:grid grid md:grid-cols-12 gap-5">
+      <div className="col-span-1 md:col-span-9 grid md:grid-cols-3 gap-3 mt-10">
         {technologyData.map((technology: TechnologyType) => {
           return (
             <Explore
@@ -28,7 +28,7 @@ function TechSection({ TechDataPromise }: TechProps) {
           );
         })}
       </div>
-      <div className="col-span-3 mt-10">
+      <div className=" col-span-1 md:col-span-3 mt-10">
         <YourStack stack={stack} setStack={setStack}></YourStack>
       </div>
     </section>

@@ -1,21 +1,21 @@
 import logo from "../assets/logo-text.png";
 function Footer() {
   return (
-    <div className="container mx-auto mt-30 mb-10">
-      <div className="grid grid-cols-12">
-        <div className="col-span-6">
-          <img src={logo} />
-          <p className="text-gray-500 mt-5">
+    <div className="px-2 container mx-auto mt-30 mb-10">
+      <div className="grid md:grid-cols-12">
+        <div className="md:col-span-6 ">
+          <img className="mx-auto md:mx-0" src={logo} />
+          <p className="text-gray-500 mt-5 text-center md:text-start">
             Curated tools, technologies, and resources for developers building
             modern software.
           </p>
-          <p className="mt-7 flex gap-5">
+          <p className="mt-7 flex gap-5 justify-center md:justify-start">
             <span>GitHub</span>
             <span>Twitter</span>
             <span>Linkedin</span>
           </p>
         </div>
-        <div className="col-span-2">
+        <div className="hidden md:block md:col-span-2">
           <h4 className="font-bold">PRODUCT</h4>
           <ul className="text-gray-500 flex flex-col gap-4 mt-4">
             <li>
@@ -29,7 +29,7 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="col-span-2">
+        <div className="hidden md:block md:col-span-2">
           <h4 className="font-bold">COMPANY</h4>
           <ul className="text-gray-500 flex flex-col gap-4 mt-4">
             <li>
@@ -43,7 +43,7 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="col-span-2">
+        <div className="hidden md:block md:col-span-2">
           <h4 className="font-bold">LEGAL</h4>
           <ul className="text-gray-500 flex flex-col gap-4 mt-4">
             <li>
@@ -55,9 +55,11 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="text-gray-500 flex justify-between mt-15">
-        <p>© 2026 Dev Stack. All rights reserved.</p>
-        <p className="flex gap-10">
+      <div className="px-4 text-gray-500 flex justify-between mt-15">
+        <p className="text-[12px] md:text-[16px]">
+          © 2026 Dev Stack. All rights reserved.
+        </p>
+        <p className=" flex gap-4 md:gap-10 text-[12px] md:text-[16px]">
           <span>Privacy</span>
           <span>Terms</span>
         </p>

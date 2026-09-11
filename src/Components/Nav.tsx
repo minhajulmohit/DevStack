@@ -2,7 +2,7 @@ import Logo from "../assets/logo-text.png";
 
 export default function Nav() {
   return (
-    <nav className="container mx-auto mt-4 flex justify-between items-center">
+    <nav className="px-2 container mx-auto mt-4 flex justify-between items-center">
       <img className="w-25 md:w-fit" src={Logo} alt="logo" />
       <ul className="hidden md:text-[#475569] md:flex md:gap-6 ">
         <li>
