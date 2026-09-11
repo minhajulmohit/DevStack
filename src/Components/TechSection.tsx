@@ -1,4 +1,4 @@
-import { use } from "react";
+import { use, useState } from "react";
 import type { TechnologyType } from "../Types";
 import Explore from "./Cards/Explore";
 import YourStack from "./Cards/YourStack";
@@ -11,16 +11,25 @@ interface TechProps {
 //
 function TechSection({ TechDataPromise }: TechProps) {
   const technologyData = use(TechDataPromise);
-
+  const [stack, setStack] = useState<TechnologyType[]>([]);
+  //
+  //
   return (
     <section className="container mx-auto grid grid-cols-12 gap-5">
       <div className="col-span-9 grid grid-cols-3 gap-3 mt-10">
         {technologyData.map((technology: TechnologyType) => {
-          return <Explore technology={technology}></Explore>;
+          return (
+            <Explore
+              key={technology.id}
+              technology={technology}
+              stack={stack}
+              setStack={setStack}
+            ></Explore>
+          );
         })}
       </div>
       <div className="col-span-3 mt-10">
-        <YourStack></YourStack>
+        <YourStack stack={stack} setStack={setStack}></YourStack>
       </div>
     </section>
   );
