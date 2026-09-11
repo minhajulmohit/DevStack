@@ -1,4 +1,4 @@
-import { useState, type Dispatch, type SetStateAction } from "react";
+import { type Dispatch, type SetStateAction } from "react";
 import type { TechnologyType } from "../../Types";
 import { toast } from "react-toastify";
 
@@ -9,13 +9,16 @@ interface technologyDataType {
 }
 
 function Explore({ technology, stack, setStack }: technologyDataType) {
-  const [isAdded, setIsAdded] = useState(false);
+  // const [isAdded, setIsAdded] = useState(false);
+  const isAdded = stack.some((item) => item.id === technology.id);
+
   //
   const handleTechnologi = () => {
-    setIsAdded(true);
+    // setIsAdded(true);
     toast.success(`${technology.name} Added to stack`);
     setStack([...stack, technology]);
   };
+ 
   //
   //
   return (

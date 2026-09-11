@@ -1,5 +1,6 @@
 import type { Dispatch, SetStateAction } from "react";
 import type { TechnologyType } from "../../Types";
+import { toast } from "react-toastify";
 
 interface yourStackType {
   stack: TechnologyType[];
@@ -7,6 +8,17 @@ interface yourStackType {
 }
 
 function YourStack({ stack, setStack }: yourStackType) {
+  //
+  const handleRemoveAStack = (technology: TechnologyType) => {
+    const restStack = stack.filter((astack) => astack.name !== technology.name);
+    setStack(restStack);
+    toast.info(`${technology.name} removed`);
+  };
+  const handleRemoveAll = () => {
+    setStack([]);
+    toast.info("All Stack Removed");
+  };
+  //
   return (
     <section className="border border-gray-300 p-4 rounded-2xl">
       <h1 className="font-bold text-xl">Your Stack</h1>
@@ -34,10 +46,13 @@ function YourStack({ stack, setStack }: yourStackType) {
                 </div>
               </div>
 
-              <button>✕</button>
+              <button onClick={() => handleRemoveAStack(technology)}>✕</button>
             </div>
           ))}
-          <button className="border border-red-600 rounded-[10px] py-2 font-bold text-red-600 mt-15">
+          <button
+            onClick={handleRemoveAll}
+            className="border border-red-600 rounded-[10px] py-2 font-bold text-red-600 mt-15"
+          >
             Remove All
           </button>
         </section>
