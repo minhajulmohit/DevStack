@@ -2,7 +2,7 @@ import heroimg from "../assets/banner-stack.png";
 
 export default function Hero() {
   return (
-    <section className="container mx-auto p-4 md:mx-auto md:mt-5 md:flex md:justify-between md:items-center">
+    <section className="container mx-auto md:mx-auto md:mt-5 md:flex md:justify-between md:items-center">
       <div className="flex flex-col">
         <h1 className="font-bold font-[INTER] text-5xl">
           Build Your Ideal <br />
