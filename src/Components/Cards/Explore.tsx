@@ -18,7 +18,7 @@ function Explore({ technology, stack, setStack }: technologyDataType) {
     toast.success(`${technology.name} Added to stack`);
     setStack([...stack, technology]);
   };
- 
+
   //
   //
   return (
@@ -46,7 +46,7 @@ function Explore({ technology, stack, setStack }: technologyDataType) {
         </div>
         <button
           onClick={() => handleTechnologi()}
-          className={`bg-black text-white px-3 py-1 mt-5 rounded-[9px] enabled:hover:bg-linear-to-l from-[#ff5724] via-[#D81B7E] to-[#7C3AED]
+          className={`bg-black text-white px-3 py-1 mt-5 rounded-[9px] gradient-bg-hover 
             disabled:hover:bg-[#f9dceb] disabled:bg-[#f9dceb]
             disabled:text-[#f80181]
             disabled:

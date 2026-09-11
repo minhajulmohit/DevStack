@@ -19,7 +19,9 @@ function App() {
       <Hero></Hero>
       <TechHeader></TechHeader>
       <Suspense
-        fallback={<h1 className="text-center text-2xl">Loading Data...</h1>}
+        fallback={
+          <h1 className="text-center text-2xl">Stacks are Loading...</h1>
+        }
       >
         <TechSection TechDataPromise={TechDataPromise()}></TechSection>
       </Suspense>

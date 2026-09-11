@@ -4,3 +4,19 @@
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
+:root {
+  --main-gradient: linear-gradient(to right, #ff5722, #d81b7e, #7c3aed);
+}
+.gradient-bg {
+  background: var(--main-gradient);
+}
+.gradient-text {
+  background: var(--main-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-bg-hover:not(:disabled):hover {
+  background: var(--main-gradient);
+}

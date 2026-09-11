@@ -10,9 +10,15 @@ function Footer() {
             modern software.
           </p>
           <p className="mt-7 flex gap-5 justify-center md:justify-start">
-            <span>GitHub</span>
-            <span>Twitter</span>
-            <span>Linkedin</span>
+            <span>
+              <a href="">GitHub</a>
+            </span>
+            <span>
+              <a href="">Twitter</a>
+            </span>
+            <span>
+              <a href="">Linkedin</a>
+            </span>
           </p>
         </div>
         <div className="hidden md:block md:col-span-2">
@@ -60,8 +66,12 @@ function Footer() {
           © 2026 Dev Stack. All rights reserved.
         </p>
         <p className=" flex gap-4 md:gap-10 text-[12px] md:text-[16px]">
-          <span>Privacy</span>
-          <span>Terms</span>
+          <span>
+            <a href="">Privacy</a>
+          </span>
+          <span>
+            <a href="">Terms</a>
+          </span>
         </p>
       </div>
     </div>

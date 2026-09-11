@@ -3,7 +3,7 @@ function TechHeader() {
     <section className="px-2 container mx-auto">
       <h1 className="font-bold font-[INTER] text-3xl">
         Explore the
-        <span className="bg-linear-to-r from-[#ff5724] via-[#D81B7E] to-[#7C3AED] bg-clip-text text-transparent">
+        <span className="gradient-text">
           {" "}
           Technologies
         </span>
