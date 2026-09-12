@@ -7,4 +7,5 @@ export type TechnologyType = {
   rating: number;
   difficulty: "Beginner-Friendly" | "Intermediate" | "Advanced";
   badge: string;
+  color: string;
 };

@@ -18,16 +18,16 @@ Users can explore different technologies and build their own personalized develo
 
 # What is JSX, and why is it used in React?
 
-JSX is an extend version of js where we can use both html tags and JS code.
+JSX is an extended version of JavasScript where we can use both html tags and JS code.
 
 # What is the difference between props and state?
 
 Props are used for sending data from parent to child component.
-State are used for reserv and manage data of any components.
+State is used to reserv and manage data of any components.
 
 # What does the useState hook do, and where did you use it in this project?
 
-useState hook is used to creat and manage state in a react component, in this project I used this in TechSection for store and update the selected technologies.
+useState hook is used to create and manage state in a react component, in this project I used this in TechSection for store and update the selected technologies.
 
 # What does the useEffect hook do, and why did you need it to load the JSON data?
 
@@ -43,4 +43,4 @@ It means showing different ui or elements based on a condition . In this project
 
 # How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
 
-For pass data from parent to child I can use Props,But there is no way to send data from child to parent. But we can use Lifting State Up methode for sent somthing from child to parent.
+For pass data from parent to child I can use Props,But there is no direct way to send data from child to parent. But we can use Lifting State Up method for sent somthing from child to parent.

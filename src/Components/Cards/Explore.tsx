@@ -29,7 +29,14 @@ function Explore({ technology, stack, setStack }: technologyDataType) {
       >
         <div className="flex justify-between items-start">
           <img className="w-10" src={technology.icon} />
-          <small className="border border-gray-200 rounded-2xl px-3 py-0.5 bg-[#e4d5fd] text-[#5e02fd]">
+          <small
+            className="border rounded-2xl px-3 py-0.5"
+            style={{
+              backgroundColor: `${technology.color}20`,
+              color: technology.color,
+              borderColor: `${technology.color}30`,
+            }}
+          >
             {technology.badge}
           </small>
         </div>
