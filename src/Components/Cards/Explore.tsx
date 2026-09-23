@@ -13,7 +13,7 @@ function Explore({ technology, stack, setStack }: technologyDataType) {
   const isAdded = stack.some((item) => item.id === technology.id);
 
   //
-  const handleTechnologi = () => {
+  const handleTechnology = () => {
     // setIsAdded(true);
     toast.success(`${technology.name} Added to stack`);
     setStack([...stack, technology]);
@@ -52,7 +52,7 @@ function Explore({ technology, stack, setStack }: technologyDataType) {
           <small>⭐ {technology.rating}</small>
         </div>
         <button
-          onClick={() => handleTechnologi()}
+          onClick={() => handleTechnology()}
           className={`bg-black text-white px-3 py-1 mt-5 rounded-[9px] gradient-bg-hover 
             disabled:hover:bg-[#f9dceb] disabled:bg-[#f9dceb]
             disabled:text-[#f80181]

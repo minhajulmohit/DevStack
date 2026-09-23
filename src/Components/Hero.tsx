@@ -14,7 +14,7 @@ export default function Hero() {
         </p>
         <div className="mt-6 grid grid-cols-1 gap-2 px-4 sm:grid-cols-2 md:mt-10 md:max-w-100 md:px-0">
           <button className="text-white gradient-bg py-0.5 px-3 rounded-[5px]">
-            Exprore Technologies
+            Explore Technologies
           </button>
           <button className="text-[#475569] border border-[#c8cdd4] py-0.5 px-3 rounded-[5px]">
             Learn More

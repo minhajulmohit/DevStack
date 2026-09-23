@@ -1,46 +1,170 @@
-# Project Name
+# 🚀 Dev Stack
 
-Dev Stack
+Dev Stack is a single-page React application that helps developers explore modern web development technologies. Users can explore different frontend, backend, database, and tooling technologies with their descriptions, difficulty levels, ratings, and categories, and build their own personalized development stack.
 
-# Description
+## 🌐 Live Demo
 
-Dev Stack is a single-page React application designed to help developers explore a wide range of technologies used in modern web development. It provides an interactive and organized way to discover popular frontend, backend, database, and other development technologies, along with their descriptions, categories, difficulty levels, and ratings.
-Users can explore different technologies and build their own personalized development stack by selecting the technologies they are interested in.
+🔗 **Live Website:** https://dev-stack-2026.netlify.app/
 
-# Technology Used
+🔗 **GitHub Repository:** https://github.com/minhajulmohit/DEVSTACK
 
-1.React.js;
-2.Tailwind CSS;
-3.TypeScript;
-4.React-Toastify;
-5.JSON;
-6.Vite.
+---
 
-# What is JSX, and why is it used in React?
+## 📸 Screenshot
 
-JSX is an extended version of JavasScript where we can use both html tags and JS code.
+![Dev Stack Screenshot](./Screenshot.png)
 
-# What is the difference between props and state?
 
-Props are used for sending data from parent to child component.
-State is used to reserv and manage data of any components.
+---
 
-# What does the useState hook do, and where did you use it in this project?
+## 🛠️ Technologies Used
 
-useState hook is used to create and manage state in a react component, in this project I used this in TechSection for store and update the selected technologies.
+* React.js
+* TypeScript
+* Tailwind CSS
+* Vite
+* JSON
+* React Toastify
 
-# What does the useEffect hook do, and why did you need it to load the JSON data?
+---
 
-useEffect hook is used to perform side effects like fetching data, and I can used it to fetch the JSON data from the file after the component rendered.
+## ✨ Main Features
 
-# Why does every item in a .map() list need a unique key prop?
+* 🔍 Explore modern web development technologies
+* 🖥️ Browse Frontend, Backend, Database, and Tooling technologies
+* ⭐ View technology ratings
+* 📊 View technology difficulty levels
+* 🏷️ View technology categories and badges
+* ➕ Add technologies to your personalized stack
+* ❌ Remove individual technologies from your stack
+* 🗑️ Remove all selected technologies at once
+* 🔔 Toast notifications when technologies are added or removed
+* 📱 Responsive design for different screen sizes
+* 🎨 Modern gradient-based user interface
+* 🍔 Responsive mobile navigation menu
 
-map() list needs a unique key prop so React can identify each item and know which items were added, removed, or updated when the list changes.
+---
 
-# What is conditional rendering? Show one place you used it ?
+## 📦 Dependencies
 
-It means showing different ui or elements based on a condition . In this project I used it to show an empty stack message when no technology has been added.
+### Main Dependencies
 
-# How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
+* `react`
+* `react-dom`
+* `react-toastify`
+* `tailwindcss`
+* `@tailwindcss/vite`
 
-For pass data from parent to child I can use Props,But there is no direct way to send data from child to parent. But we can use Lifting State Up method for sent somthing from child to parent.
+### Development Dependencies
+
+* `typescript`
+* `vite`
+* `@vitejs/plugin-react`
+* `@types/react`
+* `@types/react-dom`
+* `@types/node`
+* `oxlint`
+
+---
+
+## 💻 Run the Project Locally
+
+Follow these steps to run the project on your local machine.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/minhajulmohit/DEVSTACK.git
+```
+
+### 2. Go to the project directory
+
+```bash
+cd DevStack
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+The application will be available at the local URL provided by Vite, usually:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## 🏗️ Build for Production
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+To preview the production build locally:
+
+```bash
+npm run preview
+```
+
+---
+
+## 📁 Project Structure
+
+```text
+DevStack/
+│
+├── public/
+│   └── Data.json
+│
+├── src/
+│   ├── assets/
+│   ├── Components/
+│   │   ├── Cards/
+│   │   │   ├── Explore.tsx
+│   │   │   └── YourStack.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Nav.tsx
+│   │   ├── TechHeader.tsx
+│   │   └── TechSection.tsx
+│   │
+│   ├── App.tsx
+│   ├── Types.ts
+│   ├── index.css
+│   └── main.tsx
+│
+├── index.html
+├── package.json
+├── tsconfig.json
+└── README.md
+```
+
+---
+
+## 🔗 Relevant Links
+
+* 🌐 **Live Demo:** [https://dev-stack-2026.netlify.app/]
+* 💻 **GitHub Repository:** https://github.com/minhajulmohit/DevStack
+
+
+---
+
+## 👨‍💻 Author
+
+**MD Minhajul Islam Mohit**
+
+Full Stack AI Web Development Student
+
+* GitHub: https://github.com/minhajulmohit
+* LinkedIn: https://www.linkedin.com/in/md-minhajul-islam-mohit-856261439/
